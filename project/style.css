@@ -1,11 +1,14 @@
 img {
     display: grid;
     align-items: center;
-    height: 400px;
-    width: 400px;
+    height: 700px;
+    width: 700px;
     transition: transform 0.2s;
     border-color: black;
     border-style: solid;
+     margin-left: 50px;
+    margin-top: 50px;
+    position: absolute;
 
 }
 
