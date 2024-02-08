@@ -1,5 +1,6 @@
 .all{
     display: flex;
+   
 }
 
 .tilt-container{
@@ -60,4 +61,10 @@
     
     transform: scaleX(2.5) scaleY(3)
     
+}
+body{
+    background-color:burlywood;
+}
+h1{
+    color:crimson;
 }
