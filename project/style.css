@@ -1,0 +1,21 @@
+img {
+    display: grid;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    transition: transform 0.2s;
+    border-color: black;
+    border-style: solid;
+
+}
+
+img:hover  {
+   transform : rotate(30deg) scale(1.2);
+   
+ }
+ body{
+  background-color:burlywood;
+}
+h1{
+  color:crimson;
+}
