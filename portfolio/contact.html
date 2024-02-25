@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="home">Contact</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Resume</a></li>
+                <li><a href="contact.html">Projects</a></li>
+                <li><a href="">I am social on</a></li>
+            </ul>
+        </nav>
+        <div class="box">
+            <h4 id="text"></h4>
+            </div>
+            <div class="input">
+            <input id="newText" type="text" placeholder="Text your message we will reply soon"></div>
+            <div class="button">
+            <button onclick="addText()">Send</button>
+            <button ><a href="file.html">Want to send some files</a></button>
+        </div>
+    </body>
+    <script>
+        function addText(){
+            if(newText.value !==null){
+                text.innerHTML +=text.innerHTML ? "<hr>" + newText.value: newText.value;
+                newText.value=""
+            }
+        }
+    </script>
+</html>
