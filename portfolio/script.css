@@ -1,0 +1,148 @@
+.photo{
+    width:300px;
+    height: 300px;
+    overflow:hidden;
+    border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
+    animation: ease-in-out flow 4s infinite;
+
+}
+
+.photo img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes flow {
+    0%{
+        border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
+    }
+    35%{
+        border-radius: 80% 70% 60% 60% / 80% 70% 60% 60%;
+    }
+    70%{
+        border-radius: 70% 90% 60% 70%/ 80% 90% 50% 90%;
+    }
+    100%{
+        border-radius:60% 40% 40% 60% / 60% 40% 60% 40%;
+    }
+}
+.info{
+    position: relative;
+    float: right;
+    margin-right:10rem ;
+    margin-top: 3rem;
+}
+ 
+
+#index{
+    background-color:#1a1c1e;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: orangered;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+body{
+    background-color: #1a1c1e;
+}
+
+.home {
+    margin-left: 15px;
+    background-color: rgb(177, 47, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    text-decoration: none;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+
+}
+.nav-links li{
+    margin: 0 15px;
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+}
+.nav-links li a:hover{
+    color:#ffd700; 
+}
+.box{
+    padding-left: 5px;
+    border: 1px solid rgb(77,77,77);
+    max-width: 100%;
+    background-color:#1a1c1e;
+    color: aliceblue;
+    height: 500px;
+    overflow: auto;
+    
+}
+input{
+    width: 100%;
+    background-color: rgb(34, 33, 33);
+    border: none;
+    height:90px;
+    color:white;
+}
+.button{
+    display: grid
+}
+.button a{
+    text-decoration: none;
+    color:white;
+}
+button{
+    background-color: #00ff08;
+    border: none;
+    color:white;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 600px;
+    cursor:pointer;
+}
+aside{
+    position: relative;
+    float: left;
+    height:40rem;
+    width: 20rem;
+    background-color: #1a1c1e;
+}
+aside a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    font-style: normal;
+    margin: 1rem;
+}
+aside li{
+    position: relative;
+    margin: 1rem; 
+    list-style:inside;   
+}
+.project {
+    position: relative;
+    margin-bottom: 3rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    color: khaki;
+    font-size: 3rem;
+}
+section{
+    position:absolute;
+    float: left;
+    margin-top: 14rem;
+    margin-left: 0rem;
+}
+section p{
+    color: rgba(193, 209, 223, 0.521);
+    width: 25rem;
+    margin: 2rem;
+}
