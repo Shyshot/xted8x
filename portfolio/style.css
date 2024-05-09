@@ -39,41 +39,19 @@
     margin: 0;
     padding: 0;
 }
-nav{
-    background-color: orangered;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    
-}
+
 body{
     background-color: #1a1c1e;
 }
 
-.home {
-    margin-left: 15px;
-    background-color: rgb(177, 47, 0);
-    color: white;
-    font-weight: bold;
-    font-size: 3rem;
-    text-decoration: none;
+:root{
+    --bg-color: orangered;
+    --primary : rgb(177,47,0);
+    --text-color: #fff;
+    --hover : #ffd700;
 }
-.nav-links{
-    list-style: none;
-    display: flex;
 
-}
-.nav-links li{
-    margin: 0 15px;
-}
-.nav-links li a{
-    color: white;
-    text-decoration: none;
-}
-.nav-links li a:hover{
-    color:#ffd700; 
-}
+
 .box{
     padding-left: 5px;
     border: 1px solid rgb(77,77,77);
@@ -145,4 +123,42 @@ section p{
     color: rgba(193, 209, 223, 0.521);
     width: 25rem;
     margin: 2rem;
+}
+
+.topnav{
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: var(--hover);
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+.topnav a.home{
+    float: left;
+}
+.topnav a.right{
+    float: right;
+}
+
+@media screen and (max-width : 600px) {
+    .topnav a{
+        float : none;
+        width : 100%;
+    }
 }
