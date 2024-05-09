@@ -19,19 +19,19 @@
             <button onclick="addText()">Send</button>
         </div>
     </body>
-    <script>s
+    <script>
         let taskInput = document.getElementById("newText");
         taskInput.addEventListener('keydown',function(e){
-            if(event.key =="Enter"){
+            if(e.key == "Enter"){
                 console.log("Key Down");
                 addText();
             }
         })
 
         function addText(){
-            if(newText.value !==null){
-                text.innerHTML +=text.innerHTML ? "<hr>" + newText.value: newText.value;
-                newText.value=""
+            if(newText.value !== ""){
+                text.innerHTML += text.innerHTML ? "<hr>" + newText.value : newText.value;
+                newText.value="";
             }
         }
     </script>
