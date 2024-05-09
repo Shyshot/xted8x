@@ -1,0 +1,130 @@
+:root{
+    --bg-color: orangered;
+    --primary : rgb(177,47,0);
+    --text-color: #fff;
+    --hover : #ffd700;
+}
+
+#index{
+    background-color:#1a1c1e;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1a1c1e;
+}
+.box{
+    padding-left: 5px;
+    border: 1px solid rgb(77,77,77);
+    max-width: 100%;
+    background-color:#1a1c1e;
+    color: aliceblue;
+    height: 500px;
+    overflow: auto;
+    font-size: 3vh;
+}
+input{
+    width: 100%;
+    background-color: rgb(34, 33, 33);
+    border: none;
+    height:90px;
+    font-size:3vh ;
+    color:white;
+}
+.button{
+    display: grid
+}
+.button a{
+    text-decoration: none;
+    color:white;
+}
+button{
+    background-color: #00ff08;
+    border: none;
+    color:white;
+    text-align: center;
+    font-size: 16px;
+    width: 16vh;
+    height: 4vh;
+    margin:  3px 700px;
+    cursor:pointer;
+}
+aside{
+    position: relative;
+    float: left;
+    height:40rem;
+    width: 20rem;
+    background-color: #1a1c1e;
+}
+aside a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    font-style: normal;
+    margin: 1rem;
+}
+aside li{
+    position: relative;
+    margin: 1rem; 
+    list-style:inside;   
+}
+.project {
+    position: relative;
+    margin-bottom: 3rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    color: khaki;
+    font-size: 3rem;
+}
+section{
+    position:absolute;
+    float: left;
+    margin-top: 14rem;
+    margin-left: 0rem;
+}
+section p{
+    color: rgba(193, 209, 223, 0.521);
+    width: 25rem;
+    margin: 2rem;
+}
+
+.topnav{
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: var(--hover);
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+.topnav a.home{
+    float: left;
+}
+.topnav a.right{
+    float: right;
+}
+
+@media screen and (max-width : 600px) {
+    .topnav a{
+        float : none;
+        width : 100%;
+    }
+}
+
+
